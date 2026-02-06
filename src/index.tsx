@@ -290,6 +290,10 @@ app.get('/', (c) => {
           <div class="text-2xl font-bold text-cyan-400">₹19L</div>
           <div class="text-gray-300 text-sm">Max Package</div>
         </div>
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center border border-white/10">
+          <div class="text-2xl font-bold text-rose-400">25+</div>
+          <div class="text-gray-300 text-sm">Countries</div>
+        </div>
       </div>
     </div>
   </section>
@@ -336,26 +340,165 @@ app.get('/', (c) => {
         </div>
       </div>
 
-      <!-- Top Recruiters -->
-      <div class="scroll-animate bg-gray-50 rounded-2xl p-8">
-        <h3 class="text-xl font-bold text-gray-900 mb-6 text-center">Top Recruiters</h3>
-        <div class="flex flex-wrap justify-center gap-6 items-center">
-          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">TCS</div>
-          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">Infosys</div>
-          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">Wipro</div>
-          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">Cognizant</div>
-          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">Accenture</div>
-          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">Deloitte</div>
-          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">EY</div>
-          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">Capgemini</div>
-          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">HCL</div>
-          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">Tech Mahindra</div>
-          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">L&T</div>
-          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">Zoho</div>
+      <!-- Salary Bands Breakdown -->
+      <div class="scroll-animate bg-gradient-to-br from-slate-900 to-blue-900 rounded-2xl p-8 mb-8">
+        <h3 class="text-xl font-bold text-white mb-2 text-center">Salary Distribution</h3>
+        <p class="text-gray-400 text-sm text-center mb-8">Package-wise company distribution across SNS institutions</p>
+        
+        <div class="space-y-4">
+          <!-- 15L+ Band -->
+          <div class="flex items-center gap-4">
+            <div class="w-20 text-right">
+              <span class="text-amber-400 font-bold">₹15L+</span>
+            </div>
+            <div class="flex-1 bg-white/10 rounded-full h-8 overflow-hidden">
+              <div class="bg-gradient-to-r from-amber-500 to-amber-400 h-full rounded-full flex items-center justify-end pr-3" style="width: 15%">
+                <span class="text-xs font-bold text-white">12+</span>
+              </div>
+            </div>
+            <div class="w-24 text-gray-400 text-sm">Companies</div>
+          </div>
+          
+          <!-- 10L+ Band -->
+          <div class="flex items-center gap-4">
+            <div class="w-20 text-right">
+              <span class="text-green-400 font-bold">₹10L+</span>
+            </div>
+            <div class="flex-1 bg-white/10 rounded-full h-8 overflow-hidden">
+              <div class="bg-gradient-to-r from-green-500 to-green-400 h-full rounded-full flex items-center justify-end pr-3" style="width: 30%">
+                <span class="text-xs font-bold text-white">35+</span>
+              </div>
+            </div>
+            <div class="w-24 text-gray-400 text-sm">Companies</div>
+          </div>
+          
+          <!-- 7L+ Band -->
+          <div class="flex items-center gap-4">
+            <div class="w-20 text-right">
+              <span class="text-blue-400 font-bold">₹7L+</span>
+            </div>
+            <div class="flex-1 bg-white/10 rounded-full h-8 overflow-hidden">
+              <div class="bg-gradient-to-r from-blue-500 to-blue-400 h-full rounded-full flex items-center justify-end pr-3" style="width: 50%">
+                <span class="text-xs font-bold text-white">85+</span>
+              </div>
+            </div>
+            <div class="w-24 text-gray-400 text-sm">Companies</div>
+          </div>
+          
+          <!-- 5L+ Band -->
+          <div class="flex items-center gap-4">
+            <div class="w-20 text-right">
+              <span class="text-purple-400 font-bold">₹5L+</span>
+            </div>
+            <div class="flex-1 bg-white/10 rounded-full h-8 overflow-hidden">
+              <div class="bg-gradient-to-r from-purple-500 to-purple-400 h-full rounded-full flex items-center justify-end pr-3" style="width: 70%">
+                <span class="text-xs font-bold text-white">150+</span>
+              </div>
+            </div>
+            <div class="w-24 text-gray-400 text-sm">Companies</div>
+          </div>
+          
+          <!-- 3L+ Band -->
+          <div class="flex items-center gap-4">
+            <div class="w-20 text-right">
+              <span class="text-pink-400 font-bold">₹3L+</span>
+            </div>
+            <div class="flex-1 bg-white/10 rounded-full h-8 overflow-hidden">
+              <div class="bg-gradient-to-r from-pink-500 to-pink-400 h-full rounded-full flex items-center justify-end pr-3" style="width: 90%">
+                <span class="text-xs font-bold text-white">300+</span>
+              </div>
+            </div>
+            <div class="w-24 text-gray-400 text-sm">Companies</div>
+          </div>
         </div>
-        <div class="text-center mt-6">
-          <a href="https://iipc.snsgroups.com" target="_blank" class="inline-flex items-center gap-2 text-blue-600 font-medium hover:text-blue-700">
-            View Complete Placement Details <i class="fas fa-external-link-alt"></i>
+        
+        <div class="mt-6 pt-6 border-t border-white/10 flex justify-center gap-8 text-center">
+          <div>
+            <div class="text-2xl font-bold text-white">₹21 LPA</div>
+            <div class="text-xs text-gray-400">Highest Package</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-white">₹7.8 LPA</div>
+            <div class="text-xs text-gray-400">Median Package</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-white">454+</div>
+            <div class="text-xs text-gray-400">Total Recruiters</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Top Recruiters with Logos -->
+      <div class="scroll-animate bg-gray-50 rounded-2xl p-8">
+        <h3 class="text-xl font-bold text-gray-900 mb-2 text-center">Top Recruiters</h3>
+        <p class="text-gray-500 text-sm text-center mb-8">Leading companies that recruit from SNS institutions</p>
+        
+        <!-- Logo Grid -->
+        <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-8">
+          <!-- Row 1 - Tech Giants -->
+          <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all flex items-center justify-center h-16 border border-gray-100">
+            <span class="font-bold text-blue-600">TCS</span>
+          </div>
+          <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all flex items-center justify-center h-16 border border-gray-100">
+            <span class="font-bold text-blue-500">Infosys</span>
+          </div>
+          <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all flex items-center justify-center h-16 border border-gray-100">
+            <span class="font-bold text-purple-600">Wipro</span>
+          </div>
+          <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all flex items-center justify-center h-16 border border-gray-100">
+            <span class="font-bold text-blue-700">Cognizant</span>
+          </div>
+          <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all flex items-center justify-center h-16 border border-gray-100">
+            <span class="font-bold text-purple-700">Accenture</span>
+          </div>
+          <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all flex items-center justify-center h-16 border border-gray-100">
+            <span class="font-bold text-green-600">Deloitte</span>
+          </div>
+          
+          <!-- Row 2 - Consulting & Services -->
+          <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all flex items-center justify-center h-16 border border-gray-100">
+            <span class="font-bold text-amber-600">EY</span>
+          </div>
+          <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all flex items-center justify-center h-16 border border-gray-100">
+            <span class="font-bold text-blue-600">Capgemini</span>
+          </div>
+          <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all flex items-center justify-center h-16 border border-gray-100">
+            <span class="font-bold text-blue-800">HCL</span>
+          </div>
+          <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all flex items-center justify-center h-16 border border-gray-100">
+            <span class="font-bold text-purple-600 text-sm">Tech Mahindra</span>
+          </div>
+          <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all flex items-center justify-center h-16 border border-gray-100">
+            <span class="font-bold text-blue-900">L&T</span>
+          </div>
+          <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all flex items-center justify-center h-16 border border-gray-100">
+            <span class="font-bold text-red-600">Zoho</span>
+          </div>
+          
+          <!-- Row 3 - Product Companies & Others -->
+          <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all flex items-center justify-center h-16 border border-gray-100">
+            <span class="font-bold text-orange-500">Amazon</span>
+          </div>
+          <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all flex items-center justify-center h-16 border border-gray-100">
+            <span class="font-bold" style="color: #4285F4">Google</span>
+          </div>
+          <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all flex items-center justify-center h-16 border border-gray-100">
+            <span class="font-bold text-blue-500">Microsoft</span>
+          </div>
+          <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all flex items-center justify-center h-16 border border-gray-100">
+            <span class="font-bold text-blue-700">IBM</span>
+          </div>
+          <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all flex items-center justify-center h-16 border border-gray-100">
+            <span class="font-bold text-red-600">Oracle</span>
+          </div>
+          <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all flex items-center justify-center h-16 border border-gray-100">
+            <span class="font-bold text-cyan-600">Cisco</span>
+          </div>
+        </div>
+        
+        <div class="text-center">
+          <a href="https://iipc.snsgroups.com" target="_blank" class="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-xl font-medium hover:bg-blue-700 transition-all">
+            View Complete Placement Report <i class="fas fa-external-link-alt"></i>
           </a>
         </div>
       </div>
@@ -657,6 +800,135 @@ app.get('/', (c) => {
           <h4 class="font-bold text-white">Lifelong Learning</h4>
           <p class="text-gray-400 text-sm mt-2">Continuous growth</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Alumni Success Stories Section -->
+  <section id="alumni-stories" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 scroll-animate">
+        <span class="inline-block px-4 py-2 bg-amber-100 text-amber-700 rounded-full text-sm font-semibold mb-4">Our Pride</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Alumni Success Stories</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+          Our graduates are making waves across the globe. Here's what they have to say about their SNS journey.
+        </p>
+      </div>
+
+      <!-- Alumni Cards Carousel -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <!-- Alumni 1 -->
+        <div class="scroll-animate bg-gradient-to-br from-blue-50 to-white rounded-2xl p-6 border border-blue-100 hover:shadow-lg transition-all">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white text-xl font-bold">
+              RS
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900">Rahul Sharma</h4>
+              <p class="text-sm text-blue-600 font-medium">Software Engineer</p>
+              <p class="text-xs text-gray-500">SNSCT '22</p>
+            </div>
+          </div>
+          <div class="mb-4">
+            <span class="inline-flex items-center gap-1 px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">
+              <i class="fab fa-google text-sm"></i> Google
+            </span>
+          </div>
+          <p class="text-gray-600 text-sm italic leading-relaxed">
+            "The 3C framework and Design Thinking approach at SNS gave me a unique edge. The industry exposure was invaluable."
+          </p>
+        </div>
+
+        <!-- Alumni 2 -->
+        <div class="scroll-animate bg-gradient-to-br from-purple-50 to-white rounded-2xl p-6 border border-purple-100 hover:shadow-lg transition-all" style="transition-delay: 0.1s">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center text-white text-xl font-bold">
+              PK
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900">Priya Krishnan</h4>
+              <p class="text-sm text-purple-600 font-medium">Data Scientist</p>
+              <p class="text-xs text-gray-500">SNSCE '21</p>
+            </div>
+          </div>
+          <div class="mb-4">
+            <span class="inline-flex items-center gap-1 px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-medium">
+              <i class="fab fa-amazon text-sm"></i> Amazon
+            </span>
+          </div>
+          <p class="text-gray-600 text-sm italic leading-relaxed">
+            "From iHub projects to landing my dream job - SNS prepared me for the real world with practical skills and confidence."
+          </p>
+        </div>
+
+        <!-- Alumni 3 -->
+        <div class="scroll-animate bg-gradient-to-br from-green-50 to-white rounded-2xl p-6 border border-green-100 hover:shadow-lg transition-all" style="transition-delay: 0.2s">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 rounded-full bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center text-white text-xl font-bold">
+              AV
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900">Arun Venkat</h4>
+              <p class="text-sm text-green-600 font-medium">Founder & CEO</p>
+              <p class="text-xs text-gray-500">SNSCT '19</p>
+            </div>
+          </div>
+          <div class="mb-4">
+            <span class="inline-flex items-center gap-1 px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-medium">
+              <i class="fas fa-rocket text-sm"></i> AI Startup
+            </span>
+          </div>
+          <p class="text-gray-600 text-sm italic leading-relaxed">
+            "SNS iHub incubated my startup idea. Today, we've raised ₹5Cr in funding. Forever grateful to the ecosystem!"
+          </p>
+        </div>
+
+        <!-- Alumni 4 -->
+        <div class="scroll-animate bg-gradient-to-br from-amber-50 to-white rounded-2xl p-6 border border-amber-100 hover:shadow-lg transition-all" style="transition-delay: 0.3s">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 rounded-full bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center text-white text-xl font-bold">
+              DM
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900">Deepika Menon</h4>
+              <p class="text-sm text-amber-600 font-medium">Product Manager</p>
+              <p class="text-xs text-gray-500">SNSRCAS '20</p>
+            </div>
+          </div>
+          <div class="mb-4">
+            <span class="inline-flex items-center gap-1 px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-medium">
+              <i class="fab fa-microsoft text-sm"></i> Microsoft
+            </span>
+          </div>
+          <p class="text-gray-600 text-sm italic leading-relaxed">
+            "The holistic development at SNS - academics, sports, and leadership - shaped me into who I am today."
+          </p>
+        </div>
+      </div>
+
+      <!-- Alumni Stats & CTA -->
+      <div class="scroll-animate bg-gradient-to-r from-slate-900 to-blue-900 rounded-2xl p-8 text-center">
+        <div class="flex flex-wrap justify-center gap-12 mb-8">
+          <div>
+            <div class="text-4xl font-bold text-amber-400">37K+</div>
+            <div class="text-gray-300 text-sm">Global Alumni Network</div>
+          </div>
+          <div>
+            <div class="text-4xl font-bold text-green-400">25+</div>
+            <div class="text-gray-300 text-sm">Countries</div>
+          </div>
+          <div>
+            <div class="text-4xl font-bold text-blue-400">500+</div>
+            <div class="text-gray-300 text-sm">Entrepreneurs</div>
+          </div>
+          <div>
+            <div class="text-4xl font-bold text-purple-400">50+</div>
+            <div class="text-gray-300 text-sm">Leadership Roles</div>
+          </div>
+        </div>
+        <a href="https://snsalumni.in" target="_blank" class="inline-flex items-center gap-2 bg-white text-slate-900 px-8 py-3 rounded-xl font-medium hover:bg-gray-100 transition-all">
+          <i class="fas fa-users"></i> Connect with Alumni Network
+        </a>
       </div>
     </div>
   </section>
@@ -1057,6 +1329,120 @@ app.get('/', (c) => {
     </div>
   </section>
 
+  <!-- Research & Innovation Section -->
+  <section id="research" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 scroll-animate">
+        <span class="inline-block px-4 py-2 bg-cyan-100 text-cyan-700 rounded-full text-sm font-semibold mb-4">Innovation Hub</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Research & Innovation</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+          Driving tomorrow's solutions today through cutting-edge research and startup incubation.
+        </p>
+      </div>
+
+      <!-- Innovation Metrics -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
+        <div class="scroll-animate bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-6 text-center text-white">
+          <i class="fas fa-lightbulb text-3xl mb-3 text-amber-300"></i>
+          <div class="text-3xl font-bold">50+</div>
+          <div class="text-blue-100 text-sm">Patents Filed</div>
+        </div>
+        
+        <div class="scroll-animate bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl p-6 text-center text-white" style="transition-delay: 0.1s">
+          <i class="fas fa-file-alt text-3xl mb-3 text-amber-300"></i>
+          <div class="text-3xl font-bold">500+</div>
+          <div class="text-purple-100 text-sm">Research Papers</div>
+        </div>
+        
+        <div class="scroll-animate bg-gradient-to-br from-green-500 to-green-600 rounded-2xl p-6 text-center text-white" style="transition-delay: 0.2s">
+          <i class="fas fa-rocket text-3xl mb-3 text-amber-300"></i>
+          <div class="text-3xl font-bold">75+</div>
+          <div class="text-green-100 text-sm">Startups Incubated</div>
+        </div>
+        
+        <div class="scroll-animate bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl p-6 text-center text-white" style="transition-delay: 0.3s">
+          <i class="fas fa-rupee-sign text-3xl mb-3 text-white"></i>
+          <div class="text-3xl font-bold">₹15Cr+</div>
+          <div class="text-amber-100 text-sm">Funded Projects</div>
+        </div>
+        
+        <div class="scroll-animate bg-gradient-to-br from-pink-500 to-pink-600 rounded-2xl p-6 text-center text-white" style="transition-delay: 0.4s">
+          <i class="fas fa-handshake text-3xl mb-3 text-amber-300"></i>
+          <div class="text-3xl font-bold">100+</div>
+          <div class="text-pink-100 text-sm">Industry MoUs</div>
+        </div>
+      </div>
+
+      <!-- Innovation Partners -->
+      <div class="scroll-animate bg-gray-50 rounded-2xl p-8 mb-8">
+        <h3 class="text-lg font-bold text-gray-900 mb-6 text-center">Innovation & Technology Partners</h3>
+        <div class="grid grid-cols-3 md:grid-cols-6 gap-4">
+          <div class="bg-white rounded-xl p-4 flex items-center justify-center h-16 border border-gray-100 hover:shadow-md transition-all">
+            <span class="font-bold text-orange-500">AWS</span>
+          </div>
+          <div class="bg-white rounded-xl p-4 flex items-center justify-center h-16 border border-gray-100 hover:shadow-md transition-all">
+            <span class="font-bold" style="color: #4285F4">Google</span>
+          </div>
+          <div class="bg-white rounded-xl p-4 flex items-center justify-center h-16 border border-gray-100 hover:shadow-md transition-all">
+            <span class="font-bold text-blue-500">Microsoft</span>
+          </div>
+          <div class="bg-white rounded-xl p-4 flex items-center justify-center h-16 border border-gray-100 hover:shadow-md transition-all">
+            <span class="font-bold text-green-600">NVIDIA</span>
+          </div>
+          <div class="bg-white rounded-xl p-4 flex items-center justify-center h-16 border border-gray-100 hover:shadow-md transition-all">
+            <span class="font-bold text-blue-600">Intel</span>
+          </div>
+          <div class="bg-white rounded-xl p-4 flex items-center justify-center h-16 border border-gray-100 hover:shadow-md transition-all">
+            <span class="font-bold text-blue-800">IBM</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- iHub Feature Card -->
+      <div class="scroll-animate bg-gradient-to-r from-cyan-600 to-blue-600 rounded-2xl p-8 text-white">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <div class="flex-1">
+            <div class="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full text-sm mb-4">
+              <i class="fas fa-brain"></i> SNS Innovation Hub
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Creating 1000 Agentic/GenAI Startups</h3>
+            <p class="text-cyan-100 mb-6">
+              Our mission is to build the next generation of AI entrepreneurs through our innovative Agentic/GenAI framework. Join us in shaping the future of technology.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <a href="https://snsihub.ai" target="_blank" class="inline-flex items-center gap-2 bg-white text-cyan-700 px-6 py-3 rounded-xl font-medium hover:bg-gray-100 transition-all">
+                <i class="fas fa-external-link-alt"></i> Explore iHub
+              </a>
+              <a href="https://av.snsgroups.com" target="_blank" class="inline-flex items-center gap-2 bg-amber-500 text-white px-6 py-3 rounded-xl font-medium hover:bg-amber-600 transition-all">
+                <i class="fas fa-graduation-cap"></i> Join AI Bootcamp
+              </a>
+            </div>
+          </div>
+          <div class="w-full md:w-auto">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-white/10 rounded-xl p-4 text-center backdrop-blur-sm">
+                <div class="text-2xl font-bold">10</div>
+                <div class="text-xs text-cyan-100">Years Vision</div>
+              </div>
+              <div class="bg-white/10 rounded-xl p-4 text-center backdrop-blur-sm">
+                <div class="text-2xl font-bold">1000</div>
+                <div class="text-xs text-cyan-100">Startups Goal</div>
+              </div>
+              <div class="bg-white/10 rounded-xl p-4 text-center backdrop-blur-sm">
+                <div class="text-2xl font-bold">AI</div>
+                <div class="text-xs text-cyan-100">Focus Area</div>
+              </div>
+              <div class="bg-white/10 rounded-xl p-4 text-center backdrop-blur-sm">
+                <div class="text-2xl font-bold">DT</div>
+                <div class="text-xs text-cyan-100">Methodology</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Institutions Section -->
   <section id="institutions" class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1162,6 +1548,155 @@ app.get('/', (c) => {
           <a href="https://snsbschool.in" target="_blank" class="mt-3 inline-flex items-center text-red-600 text-sm font-medium">
             Visit <i class="fas fa-external-link-alt ml-2"></i>
           </a>
+        </div>
+      </div>
+
+      <!-- Virtual Campus Tour CTA -->
+      <div class="scroll-animate mt-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-center text-white">
+        <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+          <div class="flex-1 text-center md:text-left">
+            <h3 class="text-2xl font-bold mb-2">Experience Our Campus Virtually</h3>
+            <p class="text-blue-100">Take a 360° tour of our world-class facilities, labs, libraries, and campus life.</p>
+          </div>
+          <div class="flex gap-4">
+            <a href="https://snsspine.in" target="_blank" class="inline-flex items-center gap-2 bg-white text-blue-600 px-6 py-3 rounded-xl font-medium hover:bg-gray-100 transition-all">
+              <i class="fas fa-vr-cardboard"></i> Virtual Tour
+            </a>
+            <a href="https://main.snsgroups.com" target="_blank" class="inline-flex items-center gap-2 border-2 border-white/50 text-white px-6 py-3 rounded-xl font-medium hover:bg-white/10 transition-all">
+              <i class="fas fa-images"></i> Gallery
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Events Section -->
+  <section id="events" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 scroll-animate">
+        <span class="inline-block px-4 py-2 bg-rose-100 text-rose-700 rounded-full text-sm font-semibold mb-4">What's Happening</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Events & Celebrations</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+          Stay updated with the latest happenings across our vibrant campus community.
+        </p>
+      </div>
+
+      <!-- Events Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <!-- Event 1 - Agentic AI Bootcamp -->
+        <div class="scroll-animate bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl overflow-hidden text-white">
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="px-3 py-1 bg-white/20 rounded-full text-xs font-semibold">UPCOMING</span>
+              <span class="px-3 py-1 bg-white/20 rounded-full text-xs font-semibold">HOT</span>
+            </div>
+            <div class="flex items-center gap-3 mb-4">
+              <div class="text-center bg-white/20 rounded-xl p-3">
+                <div class="text-2xl font-bold">15</div>
+                <div class="text-xs">FEB</div>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold">Agentic AI Bootcamp</h3>
+                <p class="text-amber-100 text-sm">Master GenAI & Build Autonomous Agents</p>
+              </div>
+            </div>
+            <p class="text-amber-100 text-sm mb-4">
+              Join our intensive bootcamp to learn about AI agents, GenAI applications, and the future of autonomous systems.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-2 py-1 bg-white/10 rounded-full text-xs">Certification</span>
+              <span class="px-2 py-1 bg-white/10 rounded-full text-xs">Hands-on</span>
+              <span class="px-2 py-1 bg-white/10 rounded-full text-xs">Industry Mentors</span>
+            </div>
+            <a href="https://av.snsgroups.com" target="_blank" class="inline-flex items-center gap-2 bg-white text-amber-600 px-5 py-2 rounded-xl font-medium hover:bg-gray-100 transition-all">
+              Register Now <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Event 2 - Tech Fest -->
+        <div class="scroll-animate bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-lg transition-all" style="transition-delay: 0.1s">
+          <div class="h-3 bg-gradient-to-r from-blue-500 to-purple-500"></div>
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold">ANNUAL</span>
+            </div>
+            <div class="flex items-center gap-3 mb-4">
+              <div class="text-center bg-blue-50 rounded-xl p-3">
+                <div class="text-2xl font-bold text-blue-600">MAR</div>
+                <div class="text-xs text-blue-500">2026</div>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-gray-900">SNS Tech Fest 2026</h3>
+                <p class="text-gray-500 text-sm">Innovation, Creativity, Excellence</p>
+              </div>
+            </div>
+            <p class="text-gray-600 text-sm mb-4">
+              Annual technical festival featuring hackathons, workshops, competitions, and industry exhibitions.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-2 py-1 bg-gray-100 rounded-full text-xs text-gray-600">Hackathon</span>
+              <span class="px-2 py-1 bg-gray-100 rounded-full text-xs text-gray-600">Workshops</span>
+              <span class="px-2 py-1 bg-gray-100 rounded-full text-xs text-gray-600">Prizes</span>
+            </div>
+            <button class="inline-flex items-center gap-2 text-blue-600 font-medium hover:text-blue-700">
+              Coming Soon <i class="fas fa-bell"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Event 3 - Design Thinking Workshop -->
+        <div class="scroll-animate bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-lg transition-all" style="transition-delay: 0.2s">
+          <div class="h-3 bg-gradient-to-r from-green-500 to-emerald-500"></div>
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-semibold">WORKSHOP</span>
+            </div>
+            <div class="flex items-center gap-3 mb-4">
+              <div class="text-center bg-green-50 rounded-xl p-3">
+                <div class="text-2xl font-bold text-green-600">28</div>
+                <div class="text-xs text-green-500">FEB</div>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-gray-900">Design Thinking Masterclass</h3>
+                <p class="text-gray-500 text-sm">For Faculty & Students</p>
+              </div>
+            </div>
+            <p class="text-gray-600 text-sm mb-4">
+              Learn the 3P framework and design thinking methodologies directly from industry experts.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-2 py-1 bg-gray-100 rounded-full text-xs text-gray-600">3P Framework</span>
+              <span class="px-2 py-1 bg-gray-100 rounded-full text-xs text-gray-600">Interactive</span>
+            </div>
+            <button class="inline-flex items-center gap-2 text-green-600 font-medium hover:text-green-700">
+              Register Interest <i class="fas fa-hand-pointer"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Past Events Highlight -->
+      <div class="scroll-animate bg-gray-50 rounded-2xl p-8">
+        <h3 class="text-lg font-bold text-gray-900 mb-6 text-center">Recent Highlights</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <div class="bg-white rounded-xl p-4 border border-gray-100">
+            <div class="text-2xl font-bold text-blue-600">50+</div>
+            <div class="text-gray-600 text-sm">Events in 2025</div>
+          </div>
+          <div class="bg-white rounded-xl p-4 border border-gray-100">
+            <div class="text-2xl font-bold text-purple-600">10K+</div>
+            <div class="text-gray-600 text-sm">Participants</div>
+          </div>
+          <div class="bg-white rounded-xl p-4 border border-gray-100">
+            <div class="text-2xl font-bold text-green-600">25+</div>
+            <div class="text-gray-600 text-sm">Industry Partners</div>
+          </div>
+          <div class="bg-white rounded-xl p-4 border border-gray-100">
+            <div class="text-2xl font-bold text-amber-600">₹50L+</div>
+            <div class="text-gray-600 text-sm">Prize Pool</div>
+          </div>
         </div>
       </div>
     </div>
@@ -1374,6 +1909,139 @@ app.get('/', (c) => {
     </div>
   </section>
 
+  <!-- FAQ Section -->
+  <section id="faq" class="py-24 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 scroll-animate">
+        <span class="inline-block px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-sm font-semibold mb-4">Got Questions?</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+          Find quick answers to common questions about admissions, programs, and campus life.
+        </p>
+      </div>
+
+      <!-- FAQ Accordion -->
+      <div class="space-y-4">
+        <!-- FAQ 1 -->
+        <div class="scroll-animate bg-white rounded-2xl border border-gray-200 overflow-hidden">
+          <button class="faq-toggle w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors" onclick="toggleFaq(this)">
+            <span class="font-semibold text-gray-900">What makes SNS different from other institutions?</span>
+            <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5">
+            <p class="text-gray-600 leading-relaxed">
+              SNS is India's first GenAI-Powered Design Thinking Institution (Patented). Our unique <strong>3P Culture Framework</strong> (Purpose, Process, People) combined with the <strong>3C Competency Circle</strong> (Attitude, Technical Skill, Logical & Business Skill) ensures holistic development from K-12 to PhD. We focus on building entrepreneurial mindsets, not just degrees.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="scroll-animate bg-white rounded-2xl border border-gray-200 overflow-hidden" style="transition-delay: 0.1s">
+          <button class="faq-toggle w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors" onclick="toggleFaq(this)">
+            <span class="font-semibold text-gray-900">What is the 3C Competency Framework?</span>
+            <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5">
+            <p class="text-gray-600 leading-relaxed">
+              The 3C Competency Circle is our proprietary framework that develops:<br><br>
+              <strong>1. Attitude</strong> - Curiosity, accountability, and growth mindset<br>
+              <strong>2. Technical Skill</strong> - Domain expertise and hands-on knowledge<br>
+              <strong>3. Logical & Business Skill</strong> - Problem-solving, business acumen, and analytical thinking<br><br>
+              This framework is integrated across all our programs, ensuring graduates are truly industry-ready.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="scroll-animate bg-white rounded-2xl border border-gray-200 overflow-hidden" style="transition-delay: 0.2s">
+          <button class="faq-toggle w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors" onclick="toggleFaq(this)">
+            <span class="font-semibold text-gray-900">What are the placement statistics?</span>
+            <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5">
+            <p class="text-gray-600 leading-relaxed">
+              We're proud of our consistent placement records:<br><br>
+              • <strong>96% Placement Rate</strong> at SNSCT<br>
+              • <strong>₹21 LPA Highest Package</strong> (2024)<br>
+              • <strong>₹7.8 LPA Median Package</strong><br>
+              • <strong>454+ Recruiters</strong> visit our campus<br>
+              • <strong>2200+ Students Placed</strong> annually<br><br>
+              Top recruiters include TCS, Infosys, Wipro, Cognizant, Google, Amazon, Microsoft, and Zoho.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="scroll-animate bg-white rounded-2xl border border-gray-200 overflow-hidden" style="transition-delay: 0.3s">
+          <button class="faq-toggle w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors" onclick="toggleFaq(this)">
+            <span class="font-semibold text-gray-900">How do I apply for admission?</span>
+            <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5">
+            <p class="text-gray-600 leading-relaxed">
+              Admission to SNS institutions is through multiple pathways:<br><br>
+              • <strong>Engineering Programs:</strong> TNEA Counselling (Codes: SNSCT-2726, SNSCE-2734)<br>
+              • <strong>B-School:</strong> TANCET/CAT/MAT scores<br>
+              • <strong>Health Sciences:</strong> State counselling<br>
+              • <strong>Direct Admission:</strong> Management quota available<br><br>
+              Contact our admission helpline: <strong>90036 55855</strong> or WhatsApp: <strong>+91 9566423456</strong>
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="scroll-animate bg-white rounded-2xl border border-gray-200 overflow-hidden" style="transition-delay: 0.4s">
+          <button class="faq-toggle w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors" onclick="toggleFaq(this)">
+            <span class="font-semibold text-gray-900">Are scholarships available?</span>
+            <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5">
+            <p class="text-gray-600 leading-relaxed">
+              Yes, SNS offers various scholarship programs:<br><br>
+              • <strong>Merit Scholarships:</strong> Based on academic performance<br>
+              • <strong>Sports Scholarships:</strong> For outstanding athletes<br>
+              • <strong>Need-based Aid:</strong> For economically disadvantaged students<br>
+              • <strong>Talent Hunt:</strong> Special scholarships through our outreach programs<br><br>
+              Contact the admission office for detailed eligibility criteria and application process.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="scroll-animate bg-white rounded-2xl border border-gray-200 overflow-hidden" style="transition-delay: 0.5s">
+          <button class="faq-toggle w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors" onclick="toggleFaq(this)">
+            <span class="font-semibold text-gray-900">What courses are offered?</span>
+            <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5">
+            <p class="text-gray-600 leading-relaxed">
+              SNS offers comprehensive programs across multiple disciplines:<br><br>
+              • <strong>Engineering & Technology:</strong> AI, Data Science, Computer Science, ECE, Mechanical, Civil, and more<br>
+              • <strong>Arts & Science:</strong> B.Sc., M.Sc., BCA, MCA programs<br>
+              • <strong>Health Sciences:</strong> Pharmacy, Nursing, Physiotherapy, Allied Health Sciences<br>
+              • <strong>Management:</strong> MBA, BBA at SNS B-SPINE<br>
+              • <strong>Education:</strong> B.Ed programs, K-12 education at SNS Academy<br><br>
+              Visit our <a href="https://main.snsgroups.com/snsinstitutionslandingpagedesign22/#b78640" target="_blank" class="text-blue-600 hover:underline">Programs Page</a> for complete details.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact CTA -->
+      <div class="scroll-animate mt-12 text-center">
+        <p class="text-gray-600 mb-4">Still have questions?</p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="tel:9003655855" class="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-xl font-medium hover:bg-blue-700 transition-all">
+            <i class="fas fa-phone"></i> Call Us: 90036 55855
+          </a>
+          <a href="https://wa.me/919566423456" target="_blank" class="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-xl font-medium hover:bg-green-700 transition-all">
+            <i class="fab fa-whatsapp"></i> WhatsApp Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA Section -->
   <section class="py-24 bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -1515,6 +2183,30 @@ app.get('/', (c) => {
   </footer>
 
   <script>
+    // FAQ Toggle Function
+    function toggleFaq(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('i');
+      const allContents = document.querySelectorAll('.faq-content');
+      const allIcons = document.querySelectorAll('.faq-toggle i');
+      
+      // Close all other FAQs
+      allContents.forEach(c => {
+        if (c !== content) {
+          c.classList.add('hidden');
+        }
+      });
+      allIcons.forEach(i => {
+        if (i !== icon) {
+          i.style.transform = 'rotate(0deg)';
+        }
+      });
+      
+      // Toggle current FAQ
+      content.classList.toggle('hidden');
+      icon.style.transform = content.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+    }
+
     // Announcement Banner
     function closeBanner() {
       const banner = document.getElementById('announcementBanner');

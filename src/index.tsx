@@ -107,13 +107,68 @@ app.get('/', (c) => {
           </div>
           <span class="font-bold text-xl text-gray-900">SNS Groups</span>
         </div>
-        <div class="hidden lg:flex items-center gap-6">
-          <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">About</a>
-          <a href="#programs" class="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Programs</a>
-          <a href="#placements" class="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Placements</a>
-          <a href="#pillars" class="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Five Pillars</a>
+        <div class="hidden lg:flex items-center gap-4">
+          <!-- Academics Dropdown -->
+          <div class="relative group">
+            <button class="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium flex items-center gap-1">
+              Academics <i class="fas fa-chevron-down text-xs"></i>
+            </button>
+            <div class="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div class="p-2">
+                <a href="#programs" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 rounded-lg"><i class="fas fa-graduation-cap mr-2 text-blue-600"></i>Programs Offered</a>
+                <a href="#placements" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 rounded-lg"><i class="fas fa-briefcase mr-2 text-green-600"></i>Placements</a>
+                <a href="#3c-model" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 rounded-lg"><i class="fas fa-circle-notch mr-2 text-purple-600"></i>3C Competency</a>
+                <a href="#pillars" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 rounded-lg"><i class="fas fa-columns mr-2 text-amber-600"></i>Five Pillars</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Infrastructure Dropdown -->
+          <div class="relative group">
+            <button class="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium flex items-center gap-1">
+              Infrastructure <i class="fas fa-chevron-down text-xs"></i>
+            </button>
+            <div class="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div class="p-2">
+                <a href="#institutions" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 rounded-lg"><i class="fas fa-building mr-2 text-blue-600"></i>Our Campuses</a>
+                <a href="https://snsspine.in" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 rounded-lg"><i class="fas fa-dumbbell mr-2 text-purple-600"></i>SPINE Facilities</a>
+                <a href="#ecosystem" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 rounded-lg"><i class="fas fa-bus mr-2 text-green-600"></i>Transport & Hostel</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Beyond Academics Dropdown -->
+          <div class="relative group">
+            <button class="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium flex items-center gap-1">
+              Beyond Academics <i class="fas fa-chevron-down text-xs"></i>
+            </button>
+            <div class="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div class="p-2">
+                <a href="https://snsspine.in" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 rounded-lg"><i class="fas fa-futbol mr-2 text-green-600"></i>Sports & Clubs</a>
+                <a href="https://snsihub.ai" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 rounded-lg"><i class="fas fa-rocket mr-2 text-pink-600"></i>Innovation Hub</a>
+                <a href="#ecosystem" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 rounded-lg"><i class="fas fa-calendar-star mr-2 text-amber-600"></i>Events & Celebrations</a>
+                <a href="https://snsalumni.in" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 rounded-lg"><i class="fas fa-trophy mr-2 text-blue-600"></i>Success Stories</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Meet Us Dropdown -->
+          <div class="relative group">
+            <button class="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium flex items-center gap-1">
+              Meet Us <i class="fas fa-chevron-down text-xs"></i>
+            </button>
+            <div class="absolute top-full right-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div class="p-2">
+                <a href="#about" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 rounded-lg"><i class="fas fa-info-circle mr-2 text-blue-600"></i>About Us</a>
+                <a href="#leaders" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 rounded-lg"><i class="fas fa-users mr-2 text-purple-600"></i>Leadership</a>
+                <a href="#contact" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 rounded-lg"><i class="fas fa-phone mr-2 text-green-600"></i>Contact Us</a>
+                <a href="https://online.flippingbook.com/view/565156017/" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 rounded-lg"><i class="fas fa-file-alt mr-2 text-amber-600"></i>Mandatory Disclosure</a>
+              </div>
+            </div>
+          </div>
+
           <a href="#institutions" class="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Institutions</a>
-          <a href="#ecosystem" class="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Ecosystem</a>
+
           <div class="flex items-center gap-2 ml-2">
             <a href="https://online.flippingbook.com/view/565156017/" target="_blank" class="px-3 py-1.5 bg-blue-100 text-blue-700 rounded-lg text-xs font-semibold hover:bg-blue-200 transition-all">
               <i class="fas fa-book mr-1"></i>Brochure
@@ -147,8 +202,8 @@ app.get('/', (c) => {
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div class="text-white">
           <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6">
-            <i class="fas fa-lightbulb text-amber-400"></i>
-            <span class="text-sm font-medium">First Indian Institution to Patent Design Thinking in Education</span>
+            <i class="fas fa-robot text-amber-400"></i>
+            <span class="text-sm font-medium">DT & AI-Powered Placement-Driven Campus | K-12 to PhD</span>
           </div>
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
             We Are<br>
@@ -157,7 +212,7 @@ app.get('/', (c) => {
             </span>
           </h1>
           <p class="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed max-w-xl">
-            Through Design Thinking, SNS strives to deepen knowledge and gear-up governance of world-class teaching and learning for building an entrepreneurial culture.
+            India's first GenAI-Powered Design Thinking Institution (Patented). Building industry-ready innovators through the 3C Competency Model from Kindergarten to PhD.
           </p>
           <div class="flex flex-wrap gap-4">
             <a href="#programs" class="inline-flex items-center gap-2 px-6 py-3 bg-white text-blue-700 rounded-lg font-semibold hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl">
@@ -276,13 +331,13 @@ app.get('/', (c) => {
           </p>
         </div>
 
-        <div class="scroll-animate p-8 rounded-2xl bg-gradient-to-br from-amber-50 to-amber-100 border border-amber-200" style="transition-delay: 0.2s">
-          <div class="w-14 h-14 rounded-xl bg-amber-600 flex items-center justify-center mb-6">
-            <i class="fas fa-hand-holding-heart text-2xl text-white"></i>
+        <div class="scroll-animate p-8 rounded-2xl bg-gradient-to-br from-green-50 to-green-100 border border-green-200" style="transition-delay: 0.2s">
+          <div class="w-14 h-14 rounded-xl bg-green-600 flex items-center justify-center mb-6">
+            <i class="fas fa-briefcase text-2xl text-white"></i>
           </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-3">Social Cause</h3>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Placement Driven</h3>
           <p class="text-gray-600 leading-relaxed">
-            Beyond innovation, our community focuses on solving real social needs. We cultivate social responsibility and sustainability.
+            96% placement rate with ₹21 LPA highest package. Industry-ready graduates powered by 3C Competency & Design Thinking from K-12 to PhD.
           </p>
         </div>
       </div>
@@ -296,6 +351,164 @@ app.get('/', (c) => {
           <p class="text-gray-300 text-lg leading-relaxed">
             We started our journey in 1997 through Sri SNS Charitable Trust with a philanthropic outlook of serving society. Ranking among the top colleges in Coimbatore, we aim to become an internationally recognized institution.
           </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3C Competency Circle Section -->
+  <section id="3c-model" class="py-24 bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 scroll-animate">
+        <span class="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-semibold mb-4 border border-white/20">
+          <i class="fas fa-certificate text-amber-400 mr-2"></i>SNS Differentiator
+        </span>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">The 3C Competency Circle</h2>
+        <p class="text-gray-300 max-w-2xl mx-auto text-lg">
+          Our proprietary framework for building industry-ready, AI-powered graduates from K-12 to PhD
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- 3C Visual Circle -->
+        <div class="scroll-animate">
+          <div class="relative w-80 h-80 mx-auto">
+            <!-- Outer glow -->
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-full blur-2xl"></div>
+            
+            <!-- Center circle -->
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-32 h-32 rounded-full bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center shadow-lg shadow-amber-500/30 z-10">
+                <div class="text-center">
+                  <div class="text-4xl font-bold">3C</div>
+                  <div class="text-xs opacity-80">Model</div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Attitude Circle (Top) -->
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-2">
+              <div class="w-28 h-28 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg shadow-blue-500/30 transform hover:scale-110 transition-all cursor-pointer group">
+                <div class="text-center p-2">
+                  <i class="fas fa-lightbulb text-xl mb-1 text-amber-300"></i>
+                  <div class="text-xs font-bold leading-tight">ATTITUDE</div>
+                  <div class="text-[9px] opacity-70 group-hover:opacity-100">Curiosity • Accountability</div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Technical Skill Circle (Bottom Left) -->
+            <div class="absolute bottom-4 left-4">
+              <div class="w-28 h-28 rounded-full bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center shadow-lg shadow-purple-500/30 transform hover:scale-110 transition-all cursor-pointer group">
+                <div class="text-center p-2">
+                  <i class="fas fa-cogs text-xl mb-1 text-amber-300"></i>
+                  <div class="text-xs font-bold leading-tight">TECHNICAL</div>
+                  <div class="text-[9px] opacity-70 group-hover:opacity-100">Domain Expertise</div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Logical & Business Skill Circle (Bottom Right) -->
+            <div class="absolute bottom-4 right-4">
+              <div class="w-28 h-28 rounded-full bg-gradient-to-br from-green-500 to-green-700 flex items-center justify-center shadow-lg shadow-green-500/30 transform hover:scale-110 transition-all cursor-pointer group">
+                <div class="text-center p-2">
+                  <i class="fas fa-chart-line text-xl mb-1 text-amber-300"></i>
+                  <div class="text-xs font-bold leading-tight">LOGICAL</div>
+                  <div class="text-[9px] opacity-70 group-hover:opacity-100">Business Acumen</div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Connecting lines (SVG) -->
+            <svg class="absolute inset-0 w-full h-full" viewBox="0 0 320 320">
+              <line x1="160" y1="100" x2="100" y2="220" stroke="rgba(255,255,255,0.2)" stroke-width="2" stroke-dasharray="5,5"/>
+              <line x1="160" y1="100" x2="220" y2="220" stroke="rgba(255,255,255,0.2)" stroke-width="2" stroke-dasharray="5,5"/>
+              <line x1="100" y1="220" x2="220" y2="220" stroke="rgba(255,255,255,0.2)" stroke-width="2" stroke-dasharray="5,5"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- 3C Description -->
+        <div class="scroll-animate" style="transition-delay: 0.2s">
+          <div class="space-y-6">
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-blue-400/50 transition-all">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-lg bg-blue-500/20 flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-lightbulb text-xl text-blue-400"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg mb-2 text-blue-300">Attitude (Curiosity & Accountability)</h3>
+                  <p class="text-gray-300 text-sm leading-relaxed">
+                    Fostering a growth mindset through design thinking. Students develop curiosity to explore, question, and take ownership of their learning journey.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-purple-400/50 transition-all">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-lg bg-purple-500/20 flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-cogs text-xl text-purple-400"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg mb-2 text-purple-300">Technical Skill</h3>
+                  <p class="text-gray-300 text-sm leading-relaxed">
+                    Domain expertise powered by AI & emerging technologies. From GenAI to core engineering, students master cutting-edge technical competencies.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-green-400/50 transition-all">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-lg bg-green-500/20 flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-chart-line text-xl text-green-400"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg mb-2 text-green-300">Logical & Business Skill</h3>
+                  <p class="text-gray-300 text-sm leading-relaxed">
+                    Critical thinking and business acumen for real-world success. Problem-solving, analytical reasoning, and entrepreneurial mindset development.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 flex flex-wrap gap-3">
+            <div class="px-4 py-2 bg-white/10 rounded-full text-sm border border-white/10">
+              <i class="fas fa-robot text-amber-400 mr-2"></i>AI-Powered Learning
+            </div>
+            <div class="px-4 py-2 bg-white/10 rounded-full text-sm border border-white/10">
+              <i class="fas fa-brain text-purple-400 mr-2"></i>Design Thinking
+            </div>
+            <div class="px-4 py-2 bg-white/10 rounded-full text-sm border border-white/10">
+              <i class="fas fa-graduation-cap text-blue-400 mr-2"></i>K-12 to PhD
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3C Implementation Areas -->
+      <div class="mt-16 grid md:grid-cols-4 gap-6">
+        <div class="scroll-animate bg-white/5 backdrop-blur-sm rounded-xl p-6 text-center border border-white/10">
+          <i class="fas fa-chalkboard-teacher text-3xl text-blue-400 mb-3"></i>
+          <h4 class="font-bold text-white">Academic Excellence</h4>
+          <p class="text-gray-400 text-sm mt-2">3C integrated into curriculum</p>
+        </div>
+        <div class="scroll-animate bg-white/5 backdrop-blur-sm rounded-xl p-6 text-center border border-white/10" style="transition-delay: 0.1s">
+          <i class="fas fa-briefcase text-3xl text-green-400 mb-3"></i>
+          <h4 class="font-bold text-white">Industry Readiness</h4>
+          <p class="text-gray-400 text-sm mt-2">96% placement rate</p>
+        </div>
+        <div class="scroll-animate bg-white/5 backdrop-blur-sm rounded-xl p-6 text-center border border-white/10" style="transition-delay: 0.2s">
+          <i class="fas fa-rocket text-3xl text-purple-400 mb-3"></i>
+          <h4 class="font-bold text-white">Entrepreneurship</h4>
+          <p class="text-gray-400 text-sm mt-2">Startup-ready mindset</p>
+        </div>
+        <div class="scroll-animate bg-white/5 backdrop-blur-sm rounded-xl p-6 text-center border border-white/10" style="transition-delay: 0.3s">
+          <i class="fas fa-heart text-3xl text-pink-400 mb-3"></i>
+          <h4 class="font-bold text-white">Lifelong Learning</h4>
+          <p class="text-gray-400 text-sm mt-2">Continuous growth</p>
         </div>
       </div>
     </div>

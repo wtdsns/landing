@@ -294,6 +294,98 @@ app.get('/', (c) => {
     </div>
   </section>
 
+  <!-- Placements Section -->
+  <section id="placements" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 scroll-animate">
+        <span class="inline-block px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-semibold mb-4">Career Success</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Placement Statistics</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+          Consistently delivering excellent placement records with top recruiters from across industries.
+        </p>
+      </div>
+
+      <!-- Placement Stats Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div class="scroll-animate bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl p-6 text-white text-center">
+          <i class="fas fa-trophy text-4xl text-amber-400 mb-4"></i>
+          <div class="text-4xl font-bold mb-2">₹21 LPA</div>
+          <div class="text-blue-100">Highest Package</div>
+          <div class="text-xs text-blue-200 mt-2">SNSCT 2024</div>
+        </div>
+
+        <div class="scroll-animate bg-gradient-to-br from-purple-600 to-purple-700 rounded-2xl p-6 text-white text-center" style="transition-delay: 0.1s">
+          <i class="fas fa-chart-line text-4xl text-amber-400 mb-4"></i>
+          <div class="text-4xl font-bold mb-2">96%</div>
+          <div class="text-purple-100">Placement Rate</div>
+          <div class="text-xs text-purple-200 mt-2">SNSCT Record</div>
+        </div>
+
+        <div class="scroll-animate bg-gradient-to-br from-green-600 to-green-700 rounded-2xl p-6 text-white text-center" style="transition-delay: 0.2s">
+          <i class="fas fa-building text-4xl text-amber-400 mb-4"></i>
+          <div class="text-4xl font-bold mb-2">454+</div>
+          <div class="text-green-100">Recruiters</div>
+          <div class="text-xs text-green-200 mt-2">Companies Visited</div>
+        </div>
+
+        <div class="scroll-animate bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl p-6 text-white text-center" style="transition-delay: 0.3s">
+          <i class="fas fa-rupee-sign text-4xl text-white mb-4"></i>
+          <div class="text-4xl font-bold mb-2">₹7.8 LPA</div>
+          <div class="text-amber-100">Median Package</div>
+          <div class="text-xs text-amber-200 mt-2">SNSCE 2024</div>
+        </div>
+      </div>
+
+      <!-- Top Recruiters -->
+      <div class="scroll-animate bg-gray-50 rounded-2xl p-8">
+        <h3 class="text-xl font-bold text-gray-900 mb-6 text-center">Top Recruiters</h3>
+        <div class="flex flex-wrap justify-center gap-6 items-center">
+          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">TCS</div>
+          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">Infosys</div>
+          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">Wipro</div>
+          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">Cognizant</div>
+          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">Accenture</div>
+          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">Deloitte</div>
+          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">EY</div>
+          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">Capgemini</div>
+          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">HCL</div>
+          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">Tech Mahindra</div>
+          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">L&T</div>
+          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">Zoho</div>
+        </div>
+        <div class="text-center mt-6">
+          <a href="https://iipc.snsgroups.com" target="_blank" class="inline-flex items-center gap-2 text-blue-600 font-medium hover:text-blue-700">
+            View Complete Placement Details <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Career Tracks -->
+      <div class="mt-12 grid md:grid-cols-4 gap-6">
+        <div class="scroll-animate text-center p-6 bg-blue-50 rounded-2xl">
+          <i class="fas fa-laptop-code text-3xl text-blue-600 mb-3"></i>
+          <h4 class="font-bold text-gray-900">IT & Software</h4>
+          <p class="text-sm text-gray-600 mt-2">Top MNCs & Product Companies</p>
+        </div>
+        <div class="scroll-animate text-center p-6 bg-purple-50 rounded-2xl" style="transition-delay: 0.1s">
+          <i class="fas fa-briefcase text-3xl text-purple-600 mb-3"></i>
+          <h4 class="font-bold text-gray-900">Core Engineering</h4>
+          <p class="text-sm text-gray-600 mt-2">Manufacturing & Design</p>
+        </div>
+        <div class="scroll-animate text-center p-6 bg-green-50 rounded-2xl" style="transition-delay: 0.2s">
+          <i class="fas fa-rocket text-3xl text-green-600 mb-3"></i>
+          <h4 class="font-bold text-gray-900">Startups</h4>
+          <p class="text-sm text-gray-600 mt-2">Entrepreneurship Track</p>
+        </div>
+        <div class="scroll-animate text-center p-6 bg-amber-50 rounded-2xl" style="transition-delay: 0.3s">
+          <i class="fas fa-graduation-cap text-3xl text-amber-600 mb-3"></i>
+          <h4 class="font-bold text-gray-900">Higher Studies</h4>
+          <p class="text-sm text-gray-600 mt-2">MS/MBA Abroad</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- About Section -->
   <section id="about" class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -899,98 +991,6 @@ app.get('/', (c) => {
       </div>
 
       <p class="text-center text-gray-500 text-sm mt-8">* Subject to approval</p>
-    </div>
-  </section>
-
-  <!-- Placements Section -->
-  <section id="placements" class="py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16 scroll-animate">
-        <span class="inline-block px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-semibold mb-4">Career Success</span>
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Placement Statistics</h2>
-        <p class="text-gray-600 max-w-2xl mx-auto text-lg">
-          Consistently delivering excellent placement records with top recruiters from across industries.
-        </p>
-      </div>
-
-      <!-- Placement Stats Grid -->
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-        <div class="scroll-animate bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl p-6 text-white text-center">
-          <i class="fas fa-trophy text-4xl text-amber-400 mb-4"></i>
-          <div class="text-4xl font-bold mb-2">₹21 LPA</div>
-          <div class="text-blue-100">Highest Package</div>
-          <div class="text-xs text-blue-200 mt-2">SNSCT 2024</div>
-        </div>
-
-        <div class="scroll-animate bg-gradient-to-br from-purple-600 to-purple-700 rounded-2xl p-6 text-white text-center" style="transition-delay: 0.1s">
-          <i class="fas fa-chart-line text-4xl text-amber-400 mb-4"></i>
-          <div class="text-4xl font-bold mb-2">96%</div>
-          <div class="text-purple-100">Placement Rate</div>
-          <div class="text-xs text-purple-200 mt-2">SNSCT Record</div>
-        </div>
-
-        <div class="scroll-animate bg-gradient-to-br from-green-600 to-green-700 rounded-2xl p-6 text-white text-center" style="transition-delay: 0.2s">
-          <i class="fas fa-building text-4xl text-amber-400 mb-4"></i>
-          <div class="text-4xl font-bold mb-2">454+</div>
-          <div class="text-green-100">Recruiters</div>
-          <div class="text-xs text-green-200 mt-2">Companies Visited</div>
-        </div>
-
-        <div class="scroll-animate bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl p-6 text-white text-center" style="transition-delay: 0.3s">
-          <i class="fas fa-rupee-sign text-4xl text-white mb-4"></i>
-          <div class="text-4xl font-bold mb-2">₹7.8 LPA</div>
-          <div class="text-amber-100">Median Package</div>
-          <div class="text-xs text-amber-200 mt-2">SNSCE 2024</div>
-        </div>
-      </div>
-
-      <!-- Top Recruiters -->
-      <div class="scroll-animate bg-gray-50 rounded-2xl p-8">
-        <h3 class="text-xl font-bold text-gray-900 mb-6 text-center">Top Recruiters</h3>
-        <div class="flex flex-wrap justify-center gap-6 items-center">
-          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">TCS</div>
-          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">Infosys</div>
-          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">Wipro</div>
-          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">Cognizant</div>
-          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">Accenture</div>
-          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">Deloitte</div>
-          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">EY</div>
-          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">Capgemini</div>
-          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">HCL</div>
-          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">Tech Mahindra</div>
-          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">L&T</div>
-          <div class="px-6 py-3 bg-white rounded-xl shadow-sm font-medium text-gray-700">Zoho</div>
-        </div>
-        <div class="text-center mt-6">
-          <a href="https://iipc.snsgroups.com" target="_blank" class="inline-flex items-center gap-2 text-blue-600 font-medium hover:text-blue-700">
-            View Complete Placement Details <i class="fas fa-external-link-alt"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Career Tracks -->
-      <div class="mt-12 grid md:grid-cols-4 gap-6">
-        <div class="scroll-animate text-center p-6 bg-blue-50 rounded-2xl">
-          <i class="fas fa-laptop-code text-3xl text-blue-600 mb-3"></i>
-          <h4 class="font-bold text-gray-900">IT & Software</h4>
-          <p class="text-sm text-gray-600 mt-2">Top MNCs & Product Companies</p>
-        </div>
-        <div class="scroll-animate text-center p-6 bg-purple-50 rounded-2xl" style="transition-delay: 0.1s">
-          <i class="fas fa-briefcase text-3xl text-purple-600 mb-3"></i>
-          <h4 class="font-bold text-gray-900">Core Engineering</h4>
-          <p class="text-sm text-gray-600 mt-2">Manufacturing & Design</p>
-        </div>
-        <div class="scroll-animate text-center p-6 bg-green-50 rounded-2xl" style="transition-delay: 0.2s">
-          <i class="fas fa-rocket text-3xl text-green-600 mb-3"></i>
-          <h4 class="font-bold text-gray-900">Startups</h4>
-          <p class="text-sm text-gray-600 mt-2">Entrepreneurship Track</p>
-        </div>
-        <div class="scroll-animate text-center p-6 bg-amber-50 rounded-2xl" style="transition-delay: 0.3s">
-          <i class="fas fa-graduation-cap text-3xl text-amber-600 mb-3"></i>
-          <h4 class="font-bold text-gray-900">Higher Studies</h4>
-          <p class="text-sm text-gray-600 mt-2">MS/MBA Abroad</p>
-        </div>
-      </div>
     </div>
   </section>
 

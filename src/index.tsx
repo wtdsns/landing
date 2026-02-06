@@ -167,7 +167,7 @@ app.get('/', (c) => {
             </div>
           </div>
 
-          <a href="#institutions" class="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Institutions</a>
+
         </div>
         <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100">
           <i class="fas fa-bars text-gray-600"></i>
@@ -1335,8 +1335,17 @@ app.get('/', (c) => {
     </div>
   </section>
 
-  <!-- Floating Action Buttons - Brochure & Newsletter -->
+  <!-- Floating Action Buttons -->
   <div class="fixed right-4 bottom-24 z-50 flex flex-col gap-3">
+    <!-- WhatsApp -->
+    <a href="https://wa.me/919566423456" target="_blank" 
+       class="group relative w-12 h-12 rounded-full bg-green-500 shadow-lg flex items-center justify-center hover:scale-110 hover:shadow-xl hover:bg-green-600 transition-all"
+       title="Chat on WhatsApp">
+      <i class="fab fa-whatsapp text-white text-xl"></i>
+      <span class="absolute right-full mr-3 px-3 py-1.5 bg-gray-900 text-white text-xs font-medium rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+        WhatsApp
+      </span>
+    </a>
     <!-- Brochure -->
     <a href="https://online.flippingbook.com/view/565156017/" target="_blank" 
        class="group relative w-12 h-12 rounded-full bg-white shadow-lg border border-gray-200 flex items-center justify-center hover:scale-110 hover:shadow-xl transition-all"

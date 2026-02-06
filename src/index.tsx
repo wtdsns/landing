@@ -168,15 +168,6 @@ app.get('/', (c) => {
           </div>
 
           <a href="#institutions" class="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Institutions</a>
-
-          <div class="flex items-center gap-2 ml-2">
-            <a href="https://online.flippingbook.com/view/565156017/" target="_blank" class="px-3 py-1.5 bg-blue-100 text-blue-700 rounded-lg text-xs font-semibold hover:bg-blue-200 transition-all">
-              <i class="fas fa-book mr-1"></i>Brochure
-            </a>
-            <a href="https://online.flippingbook.com/view/565061853/" target="_blank" class="px-3 py-1.5 bg-purple-100 text-purple-700 rounded-lg text-xs font-semibold hover:bg-purple-200 transition-all">
-              <i class="fas fa-newspaper mr-1"></i>Newsletter
-            </a>
-          </div>
         </div>
         <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100">
           <i class="fas fa-bars text-gray-600"></i>
@@ -1116,7 +1107,7 @@ app.get('/', (c) => {
   <section id="ecosystem" class="py-24 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16 scroll-animate">
-        <span class="inline-block px-4 py-2 bg-amber-100 text-amber-700 rounded-full text-sm font-semibold mb-4">SNS Ecosystem</span>
+        <span class="inline-block px-4 py-2 bg-gray-100 text-gray-600 rounded-full text-sm font-semibold mb-4">SNS Ecosystem</span>
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Quick Links & Portals</h2>
         <p class="text-gray-600 max-w-2xl mx-auto text-lg">
           Access our various platforms for alumni, internships, learning resources, and innovation.
@@ -1125,104 +1116,104 @@ app.get('/', (c) => {
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Alumni -->
-        <a href="https://snsalumni.in" target="_blank" class="scroll-animate quick-link bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl p-6 text-white transition-all">
+        <a href="https://snsalumni.in" target="_blank" class="scroll-animate quick-link bg-white rounded-2xl p-6 border border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all group">
           <div class="flex items-center gap-4 mb-4">
-            <div class="w-14 h-14 rounded-xl bg-white/20 flex items-center justify-center">
-              <i class="fas fa-user-friends text-2xl"></i>
+            <div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center group-hover:bg-blue-100 transition-colors">
+              <i class="fas fa-user-friends text-2xl text-blue-600"></i>
             </div>
             <div>
-              <h3 class="text-xl font-bold">Alumni Network</h3>
-              <p class="text-blue-200 text-sm">snsalumni.in</p>
+              <h3 class="text-xl font-bold text-gray-900">Alumni Network</h3>
+              <p class="text-gray-500 text-sm">snsalumni.in</p>
             </div>
           </div>
-          <p class="text-blue-100 text-sm">Connect with 37K+ alumni worldwide. Networking, mentorship, and career opportunities.</p>
-          <div class="mt-4 flex items-center text-amber-300 font-medium">
-            Visit Portal <i class="fas fa-arrow-right ml-2"></i>
+          <p class="text-gray-600 text-sm">Connect with 37K+ alumni worldwide. Networking, mentorship, and career opportunities.</p>
+          <div class="mt-4 flex items-center text-blue-600 font-medium group-hover:text-blue-700">
+            Visit Portal <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
           </div>
         </a>
 
         <!-- Internships -->
-        <a href="https://main.snsgroups.com/internship-jobs/" target="_blank" class="scroll-animate quick-link bg-gradient-to-br from-purple-600 to-purple-700 rounded-2xl p-6 text-white transition-all" style="transition-delay: 0.1s">
+        <a href="https://main.snsgroups.com/internship-jobs/" target="_blank" class="scroll-animate quick-link bg-white rounded-2xl p-6 border border-gray-200 hover:border-purple-300 hover:shadow-lg transition-all group" style="transition-delay: 0.1s">
           <div class="flex items-center gap-4 mb-4">
-            <div class="w-14 h-14 rounded-xl bg-white/20 flex items-center justify-center">
-              <i class="fas fa-briefcase text-2xl"></i>
+            <div class="w-14 h-14 rounded-xl bg-purple-50 flex items-center justify-center group-hover:bg-purple-100 transition-colors">
+              <i class="fas fa-briefcase text-2xl text-purple-600"></i>
             </div>
             <div>
-              <h3 class="text-xl font-bold">Internships & Jobs</h3>
-              <p class="text-purple-200 text-sm">Career Opportunities</p>
+              <h3 class="text-xl font-bold text-gray-900">Internships & Jobs</h3>
+              <p class="text-gray-500 text-sm">Career Opportunities</p>
             </div>
           </div>
-          <p class="text-purple-100 text-sm">Find internships and job opportunities with top companies. Work-while-learn programs available.</p>
-          <div class="mt-4 flex items-center text-amber-300 font-medium">
-            Explore Opportunities <i class="fas fa-arrow-right ml-2"></i>
+          <p class="text-gray-600 text-sm">Find internships and job opportunities with top companies. Work-while-learn programs available.</p>
+          <div class="mt-4 flex items-center text-purple-600 font-medium group-hover:text-purple-700">
+            Explore Opportunities <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
           </div>
         </a>
 
         <!-- Learning Community -->
-        <a href="https://snscourseware.org" target="_blank" class="scroll-animate quick-link bg-gradient-to-br from-green-600 to-green-700 rounded-2xl p-6 text-white transition-all" style="transition-delay: 0.2s">
+        <a href="https://snscourseware.org" target="_blank" class="scroll-animate quick-link bg-white rounded-2xl p-6 border border-gray-200 hover:border-emerald-300 hover:shadow-lg transition-all group" style="transition-delay: 0.2s">
           <div class="flex items-center gap-4 mb-4">
-            <div class="w-14 h-14 rounded-xl bg-white/20 flex items-center justify-center">
-              <i class="fas fa-book-reader text-2xl"></i>
+            <div class="w-14 h-14 rounded-xl bg-emerald-50 flex items-center justify-center group-hover:bg-emerald-100 transition-colors">
+              <i class="fas fa-book-reader text-2xl text-emerald-600"></i>
             </div>
             <div>
-              <h3 class="text-xl font-bold">Learning Community</h3>
-              <p class="text-green-200 text-sm">snscourseware.org</p>
+              <h3 class="text-xl font-bold text-gray-900">Learning Community</h3>
+              <p class="text-gray-500 text-sm">snscourseware.org</p>
             </div>
           </div>
-          <p class="text-green-100 text-sm">Access course materials, resources, and online learning content. Continuous learning platform.</p>
-          <div class="mt-4 flex items-center text-amber-300 font-medium">
-            Start Learning <i class="fas fa-arrow-right ml-2"></i>
+          <p class="text-gray-600 text-sm">Access course materials, resources, and online learning content. Continuous learning platform.</p>
+          <div class="mt-4 flex items-center text-emerald-600 font-medium group-hover:text-emerald-700">
+            Start Learning <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
           </div>
         </a>
 
         <!-- SPINE -->
-        <a href="https://snsspine.in" target="_blank" class="scroll-animate quick-link bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl p-6 text-white transition-all" style="transition-delay: 0.3s">
+        <a href="https://snsspine.in" target="_blank" class="scroll-animate quick-link bg-white rounded-2xl p-6 border border-gray-200 hover:border-amber-300 hover:shadow-lg transition-all group" style="transition-delay: 0.3s">
           <div class="flex items-center gap-4 mb-4">
-            <div class="w-14 h-14 rounded-xl bg-white/20 flex items-center justify-center">
-              <i class="fas fa-star text-2xl"></i>
+            <div class="w-14 h-14 rounded-xl bg-amber-50 flex items-center justify-center group-hover:bg-amber-100 transition-colors">
+              <i class="fas fa-star text-2xl text-amber-600"></i>
             </div>
             <div>
-              <h3 class="text-xl font-bold">SPINE</h3>
-              <p class="text-amber-200 text-sm">snsspine.in</p>
+              <h3 class="text-xl font-bold text-gray-900">SPINE</h3>
+              <p class="text-gray-500 text-sm">snsspine.in</p>
             </div>
           </div>
-          <p class="text-amber-100 text-sm">Student Activity Center. Youth leadership, clubs, events, and extracurricular activities hub.</p>
-          <div class="mt-4 flex items-center text-white font-medium">
-            Join Activities <i class="fas fa-arrow-right ml-2"></i>
+          <p class="text-gray-600 text-sm">Student Activity Center. Youth leadership, clubs, events, and extracurricular activities hub.</p>
+          <div class="mt-4 flex items-center text-amber-600 font-medium group-hover:text-amber-700">
+            Join Activities <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
           </div>
         </a>
 
         <!-- Innovation Hub -->
-        <a href="https://snsihub.ai" target="_blank" class="scroll-animate quick-link bg-gradient-to-br from-pink-600 to-pink-700 rounded-2xl p-6 text-white transition-all" style="transition-delay: 0.4s">
+        <a href="https://snsihub.ai" target="_blank" class="scroll-animate quick-link bg-white rounded-2xl p-6 border border-gray-200 hover:border-rose-300 hover:shadow-lg transition-all group" style="transition-delay: 0.4s">
           <div class="flex items-center gap-4 mb-4">
-            <div class="w-14 h-14 rounded-xl bg-white/20 flex items-center justify-center">
-              <i class="fas fa-rocket text-2xl"></i>
+            <div class="w-14 h-14 rounded-xl bg-rose-50 flex items-center justify-center group-hover:bg-rose-100 transition-colors">
+              <i class="fas fa-rocket text-2xl text-rose-600"></i>
             </div>
             <div>
-              <h3 class="text-xl font-bold">SNS iHub</h3>
-              <p class="text-pink-200 text-sm">snsihub.ai</p>
+              <h3 class="text-xl font-bold text-gray-900">SNS iHub</h3>
+              <p class="text-gray-500 text-sm">snsihub.ai</p>
             </div>
           </div>
-          <p class="text-pink-100 text-sm">Innovation & Incubation Hub. Startup support, AI/GenAI initiatives, and entrepreneurship ecosystem.</p>
-          <div class="mt-4 flex items-center text-amber-300 font-medium">
-            Innovate Now <i class="fas fa-arrow-right ml-2"></i>
+          <p class="text-gray-600 text-sm">Innovation & Incubation Hub. Startup support, AI/GenAI initiatives, and entrepreneurship ecosystem.</p>
+          <div class="mt-4 flex items-center text-rose-600 font-medium group-hover:text-rose-700">
+            Innovate Now <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
           </div>
         </a>
 
         <!-- IIPC Placements -->
-        <a href="https://iipc.snsgroups.com" target="_blank" class="scroll-animate quick-link bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl p-6 text-white transition-all" style="transition-delay: 0.5s">
+        <a href="https://iipc.snsgroups.com" target="_blank" class="scroll-animate quick-link bg-white rounded-2xl p-6 border border-gray-200 hover:border-slate-400 hover:shadow-lg transition-all group" style="transition-delay: 0.5s">
           <div class="flex items-center gap-4 mb-4">
-            <div class="w-14 h-14 rounded-xl bg-white/20 flex items-center justify-center">
-              <i class="fas fa-handshake text-2xl"></i>
+            <div class="w-14 h-14 rounded-xl bg-slate-100 flex items-center justify-center group-hover:bg-slate-200 transition-colors">
+              <i class="fas fa-handshake text-2xl text-slate-600"></i>
             </div>
             <div>
-              <h3 class="text-xl font-bold">IIPC Portal</h3>
-              <p class="text-gray-300 text-sm">iipc.snsgroups.com</p>
+              <h3 class="text-xl font-bold text-gray-900">IIPC Portal</h3>
+              <p class="text-gray-500 text-sm">iipc.snsgroups.com</p>
             </div>
           </div>
-          <p class="text-gray-300 text-sm">Industry partnerships, placement records, and corporate connections. Training & development programs.</p>
-          <div class="mt-4 flex items-center text-amber-300 font-medium">
-            View Placements <i class="fas fa-arrow-right ml-2"></i>
+          <p class="text-gray-600 text-sm">Industry partnerships, placement records, and corporate connections. Training & development programs.</p>
+          <div class="mt-4 flex items-center text-slate-600 font-medium group-hover:text-slate-700">
+            View Placements <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
           </div>
         </a>
       </div>
@@ -1257,31 +1248,6 @@ app.get('/', (c) => {
               </div>
             </div>
           </div>
-        </a>
-      </div>
-
-      <!-- Resources: Brochure & Newsletter -->
-      <div class="mt-8 grid md:grid-cols-2 gap-6">
-        <a href="https://online.flippingbook.com/view/565156017/" target="_blank" class="scroll-animate flex items-center gap-4 bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:border-blue-300 hover:shadow-xl transition-all group">
-          <div class="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center group-hover:bg-blue-600 transition-colors">
-            <i class="fas fa-book-open text-2xl text-blue-600 group-hover:text-white transition-colors"></i>
-          </div>
-          <div class="flex-1">
-            <h4 class="font-bold text-gray-900">SNS Brochure</h4>
-            <p class="text-gray-600 text-sm">Complete guide to our institutions, programs & facilities</p>
-          </div>
-          <i class="fas fa-external-link-alt text-gray-400 group-hover:text-blue-600"></i>
-        </a>
-
-        <a href="https://online.flippingbook.com/view/565061853/" target="_blank" class="scroll-animate flex items-center gap-4 bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:border-purple-300 hover:shadow-xl transition-all group" style="transition-delay: 0.1s">
-          <div class="w-14 h-14 rounded-xl bg-purple-100 flex items-center justify-center group-hover:bg-purple-600 transition-colors">
-            <i class="fas fa-newspaper text-2xl text-purple-600 group-hover:text-white transition-colors"></i>
-          </div>
-          <div class="flex-1">
-            <h4 class="font-bold text-gray-900">SNS Newsletter</h4>
-            <p class="text-gray-600 text-sm">Latest news, events & achievements from SNS community</p>
-          </div>
-          <i class="fas fa-external-link-alt text-gray-400 group-hover:text-purple-600"></i>
         </a>
       </div>
     </div>
@@ -1368,6 +1334,28 @@ app.get('/', (c) => {
       </div>
     </div>
   </section>
+
+  <!-- Floating Action Buttons - Brochure & Newsletter -->
+  <div class="fixed right-4 bottom-24 z-50 flex flex-col gap-3">
+    <!-- Brochure -->
+    <a href="https://online.flippingbook.com/view/565156017/" target="_blank" 
+       class="group relative w-12 h-12 rounded-full bg-white shadow-lg border border-gray-200 flex items-center justify-center hover:scale-110 hover:shadow-xl transition-all"
+       title="SNS Brochure">
+      <i class="fas fa-book-open text-blue-600"></i>
+      <span class="absolute right-full mr-3 px-3 py-1.5 bg-gray-900 text-white text-xs font-medium rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+        Brochure
+      </span>
+    </a>
+    <!-- Newsletter -->
+    <a href="https://online.flippingbook.com/view/565061853/" target="_blank" 
+       class="group relative w-12 h-12 rounded-full bg-white shadow-lg border border-gray-200 flex items-center justify-center hover:scale-110 hover:shadow-xl transition-all"
+       title="SNS Newsletter">
+      <i class="fas fa-newspaper text-purple-600"></i>
+      <span class="absolute right-full mr-3 px-3 py-1.5 bg-gray-900 text-white text-xs font-medium rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+        Newsletter
+      </span>
+    </a>
+  </div>
 
   <!-- Footer -->
   <footer class="bg-slate-900 text-white py-16">

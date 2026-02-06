@@ -161,6 +161,10 @@ app.get('/', (c) => {
               <div class="p-2">
                 <a href="#about" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 rounded-lg"><i class="fas fa-info-circle mr-2 text-blue-600"></i>About Us</a>
                 <a href="#leaders" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 rounded-lg"><i class="fas fa-users mr-2 text-purple-600"></i>Leadership</a>
+                <a href="#ecosystem" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 rounded-lg"><i class="fas fa-th-large mr-2 text-pink-600"></i>SNS Ecosystem</a>
+                <a href="https://snsalumni.in" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 rounded-lg"><i class="fas fa-user-friends mr-2 text-cyan-600"></i>Alumni Network</a>
+                <a href="https://iipc.snsgroups.com" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 rounded-lg"><i class="fas fa-handshake mr-2 text-indigo-600"></i>Industry Partners</a>
+                <div class="border-t border-gray-100 my-1"></div>
                 <a href="#contact" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 rounded-lg"><i class="fas fa-phone mr-2 text-green-600"></i>Contact Us</a>
                 <a href="https://online.flippingbook.com/view/565156017/" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 rounded-lg"><i class="fas fa-file-alt mr-2 text-amber-600"></i>Mandatory Disclosure</a>
               </div>

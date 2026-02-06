@@ -79,8 +79,26 @@ app.get('/', (c) => {
 </head>
 <body class="font-sans bg-white text-gray-800">
 
+  <!-- Announcement Banner - Agentic AI Bootcamp -->
+  <div id="announcementBanner" class="fixed top-0 left-0 right-0 z-[60] bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+      <div class="flex items-center gap-3 flex-1 justify-center">
+        <span class="animate-pulse">🚀</span>
+        <span class="text-white text-sm font-medium">
+          <span class="hidden sm:inline">Upcoming:</span> <strong>Agentic AI Bootcamp</strong> - Build the Future of AI!
+        </span>
+        <a href="https://av.snsgroups.com" target="_blank" class="px-3 py-1 bg-white text-purple-700 rounded-full text-xs font-bold hover:bg-gray-100 transition-all">
+          Register Now <i class="fas fa-arrow-right ml-1"></i>
+        </a>
+      </div>
+      <button onclick="closeBanner()" class="text-white/80 hover:text-white p-1 ml-2">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+  </div>
+
   <!-- Navigation -->
-  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+  <nav id="mainNav" class="fixed top-8 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <div class="flex items-center gap-3">
@@ -96,6 +114,14 @@ app.get('/', (c) => {
           <a href="#pillars" class="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Five Pillars</a>
           <a href="#institutions" class="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Institutions</a>
           <a href="#ecosystem" class="text-gray-600 hover:text-blue-600 transition-colors text-sm font-medium">Ecosystem</a>
+          <div class="flex items-center gap-2 ml-2">
+            <a href="https://online.flippingbook.com/view/565156017/" target="_blank" class="px-3 py-1.5 bg-blue-100 text-blue-700 rounded-lg text-xs font-semibold hover:bg-blue-200 transition-all">
+              <i class="fas fa-book mr-1"></i>Brochure
+            </a>
+            <a href="https://online.flippingbook.com/view/565061853/" target="_blank" class="px-3 py-1.5 bg-purple-100 text-purple-700 rounded-lg text-xs font-semibold hover:bg-purple-200 transition-all">
+              <i class="fas fa-newspaper mr-1"></i>Newsletter
+            </a>
+          </div>
         </div>
         <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100">
           <i class="fas fa-bars text-gray-600"></i>
@@ -116,7 +142,7 @@ app.get('/', (c) => {
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero-gradient min-h-screen flex items-center pt-16">
+  <section class="hero-gradient min-h-screen flex items-center pt-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div class="text-white">
@@ -987,6 +1013,64 @@ app.get('/', (c) => {
           </div>
         </a>
       </div>
+
+      <!-- Featured: Agentic AI Bootcamp -->
+      <div class="mt-12 scroll-animate">
+        <a href="https://av.snsgroups.com" target="_blank" class="block bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 rounded-2xl p-8 text-white relative overflow-hidden group">
+          <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+          <div class="absolute bottom-0 left-0 w-48 h-48 bg-white/10 rounded-full blur-2xl -ml-24 -mb-24"></div>
+          <div class="relative flex flex-col md:flex-row items-center gap-6">
+            <div class="flex-shrink-0">
+              <div class="w-20 h-20 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                <i class="fas fa-robot text-4xl"></i>
+              </div>
+            </div>
+            <div class="flex-1 text-center md:text-left">
+              <div class="inline-flex items-center gap-2 px-3 py-1 bg-white/20 rounded-full text-xs font-semibold mb-3">
+                <span class="animate-pulse w-2 h-2 bg-green-400 rounded-full"></span>
+                UPCOMING EVENT
+              </div>
+              <h3 class="text-2xl md:text-3xl font-bold mb-2">Agentic AI Bootcamp</h3>
+              <p class="text-white/80 text-lg mb-4">Master the future of AI - Build autonomous agents, GenAI applications & more!</p>
+              <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+                <span class="px-3 py-1 bg-white/20 rounded-full text-sm"><i class="fas fa-calendar mr-2"></i>Register Now</span>
+                <span class="px-3 py-1 bg-white/20 rounded-full text-sm"><i class="fas fa-certificate mr-2"></i>Certification</span>
+                <span class="px-3 py-1 bg-white/20 rounded-full text-sm"><i class="fas fa-laptop-code mr-2"></i>Hands-on Projects</span>
+              </div>
+            </div>
+            <div class="flex-shrink-0">
+              <div class="px-6 py-3 bg-white text-purple-700 rounded-xl font-bold group-hover:scale-105 transition-transform shadow-lg">
+                Register <i class="fas fa-arrow-right ml-2"></i>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Resources: Brochure & Newsletter -->
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <a href="https://online.flippingbook.com/view/565156017/" target="_blank" class="scroll-animate flex items-center gap-4 bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:border-blue-300 hover:shadow-xl transition-all group">
+          <div class="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+            <i class="fas fa-book-open text-2xl text-blue-600 group-hover:text-white transition-colors"></i>
+          </div>
+          <div class="flex-1">
+            <h4 class="font-bold text-gray-900">SNS Brochure</h4>
+            <p class="text-gray-600 text-sm">Complete guide to our institutions, programs & facilities</p>
+          </div>
+          <i class="fas fa-external-link-alt text-gray-400 group-hover:text-blue-600"></i>
+        </a>
+
+        <a href="https://online.flippingbook.com/view/565061853/" target="_blank" class="scroll-animate flex items-center gap-4 bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:border-purple-300 hover:shadow-xl transition-all group" style="transition-delay: 0.1s">
+          <div class="w-14 h-14 rounded-xl bg-purple-100 flex items-center justify-center group-hover:bg-purple-600 transition-colors">
+            <i class="fas fa-newspaper text-2xl text-purple-600 group-hover:text-white transition-colors"></i>
+          </div>
+          <div class="flex-1">
+            <h4 class="font-bold text-gray-900">SNS Newsletter</h4>
+            <p class="text-gray-600 text-sm">Latest news, events & achievements from SNS community</p>
+          </div>
+          <i class="fas fa-external-link-alt text-gray-400 group-hover:text-purple-600"></i>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -1108,19 +1192,19 @@ app.get('/', (c) => {
             <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
             <li><a href="#programs" class="hover:text-white transition-colors">Programs</a></li>
             <li><a href="#placements" class="hover:text-white transition-colors">Placements</a></li>
-            <li><a href="#pillars" class="hover:text-white transition-colors">Five Pillars</a></li>
-            <li><a href="https://snsalumni.in" target="_blank" class="hover:text-white transition-colors">Alumni</a></li>
+            <li><a href="https://online.flippingbook.com/view/565156017/" target="_blank" class="hover:text-white transition-colors"><i class="fas fa-book mr-1"></i>Brochure</a></li>
+            <li><a href="https://online.flippingbook.com/view/565061853/" target="_blank" class="hover:text-white transition-colors"><i class="fas fa-newspaper mr-1"></i>Newsletter</a></li>
           </ul>
         </div>
 
         <div>
           <h3 class="font-bold mb-4">Ecosystem</h3>
           <ul class="space-y-2 text-gray-400 text-sm">
+            <li><a href="https://av.snsgroups.com" target="_blank" class="hover:text-white transition-colors text-amber-400"><i class="fas fa-robot mr-1"></i>Agentic AI Bootcamp</a></li>
             <li><a href="https://snsihub.ai" target="_blank" class="hover:text-white transition-colors">SNS iHub</a></li>
             <li><a href="https://snsspine.in" target="_blank" class="hover:text-white transition-colors">SPINE</a></li>
             <li><a href="https://snscourseware.org" target="_blank" class="hover:text-white transition-colors">Learning Community</a></li>
-            <li><a href="https://iipc.snsgroups.com" target="_blank" class="hover:text-white transition-colors">IIPC Portal</a></li>
-            <li><a href="https://main.snsgroups.com/internship-jobs/" target="_blank" class="hover:text-white transition-colors">Internships</a></li>
+            <li><a href="https://snsalumni.in" target="_blank" class="hover:text-white transition-colors">Alumni Network</a></li>
           </ul>
         </div>
 
@@ -1157,6 +1241,18 @@ app.get('/', (c) => {
   </footer>
 
   <script>
+    // Announcement Banner
+    function closeBanner() {
+      const banner = document.getElementById('announcementBanner');
+      const nav = document.getElementById('mainNav');
+      banner.style.transform = 'translateY(-100%)';
+      banner.style.opacity = '0';
+      setTimeout(() => {
+        banner.style.display = 'none';
+        nav.style.top = '0';
+      }, 300);
+    }
+
     // Mobile Menu Toggle
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const mobileMenu = document.getElementById('mobileMenu');

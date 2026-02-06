@@ -348,6 +348,66 @@ app.get('/', (c) => {
           </p>
         </div>
       </div>
+
+      <!-- Accreditations & Achievements -->
+      <div class="mt-16 scroll-animate">
+        <h3 class="text-center text-xl font-bold text-gray-900 mb-8">Accreditations & Achievements</h3>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <!-- NAAC A++ -->
+          <div class="bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl p-4 text-center border border-amber-200 hover:shadow-lg transition-all">
+            <div class="w-12 h-12 mx-auto mb-2 rounded-full bg-amber-500 flex items-center justify-center">
+              <i class="fas fa-award text-white text-lg"></i>
+            </div>
+            <div class="text-lg font-bold text-amber-700">NAAC A++</div>
+            <div class="text-xs text-gray-600">Highest Grade</div>
+          </div>
+
+          <!-- NIRF Ranking -->
+          <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-4 text-center border border-blue-200 hover:shadow-lg transition-all">
+            <div class="w-12 h-12 mx-auto mb-2 rounded-full bg-blue-500 flex items-center justify-center">
+              <i class="fas fa-chart-line text-white text-lg"></i>
+            </div>
+            <div class="text-lg font-bold text-blue-700">NIRF</div>
+            <div class="text-xs text-gray-600">Top Ranked</div>
+          </div>
+
+          <!-- NBA Accredited -->
+          <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-4 text-center border border-green-200 hover:shadow-lg transition-all">
+            <div class="w-12 h-12 mx-auto mb-2 rounded-full bg-green-500 flex items-center justify-center">
+              <i class="fas fa-check-circle text-white text-lg"></i>
+            </div>
+            <div class="text-lg font-bold text-green-700">NBA</div>
+            <div class="text-xs text-gray-600">Accredited</div>
+          </div>
+
+          <!-- Autonomous -->
+          <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-4 text-center border border-purple-200 hover:shadow-lg transition-all">
+            <div class="w-12 h-12 mx-auto mb-2 rounded-full bg-purple-500 flex items-center justify-center">
+              <i class="fas fa-university text-white text-lg"></i>
+            </div>
+            <div class="text-lg font-bold text-purple-700">Autonomous</div>
+            <div class="text-xs text-gray-600">Status</div>
+          </div>
+
+          <!-- Industry Ready -->
+          <div class="bg-gradient-to-br from-rose-50 to-rose-100 rounded-xl p-4 text-center border border-rose-200 hover:shadow-lg transition-all">
+            <div class="w-12 h-12 mx-auto mb-2 rounded-full bg-rose-500 flex items-center justify-center">
+              <i class="fas fa-briefcase text-white text-lg"></i>
+            </div>
+            <div class="text-lg font-bold text-rose-700">Industry</div>
+            <div class="text-xs text-gray-600">Ready Curriculum</div>
+          </div>
+
+          <!-- Global Certifications -->
+          <div class="bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-xl p-4 text-center border border-cyan-200 hover:shadow-lg transition-all">
+            <div class="w-12 h-12 mx-auto mb-2 rounded-full bg-cyan-500 flex items-center justify-center">
+              <i class="fas fa-globe text-white text-lg"></i>
+            </div>
+            <div class="text-lg font-bold text-cyan-700">Global</div>
+            <div class="text-xs text-gray-600">AI/Core Certifications</div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
